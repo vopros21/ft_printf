@@ -57,11 +57,11 @@ int	ft_check_flags(char c, char *str, int *result)
 		i = 5;
 	else if (c == '.')
 		i = 6;
-	*result = ft_ammount(str);
+	*result = ft_amount(str);
 	return (i);
 }
 
-int	ft_ammount(char *str)
+int	ft_amount(char *str)
 {
 	int	i;
 	int	res;

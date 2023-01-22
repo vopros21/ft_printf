@@ -51,12 +51,9 @@ char		*ft_itoa(int nbr);
 char		*ft_uitoa(unsigned int nbr);
 int			ft_check_flags(char c, char *str, int *result);
 int			ft_strlen(char *str);
-int			ft_atoi(const char *str);
 int			ft_isdigit(int c);
-int			ft_zeros_to_print(int n, int flag, char sign);
 char		*ft_strchr(const char *s);
-const char	*ft_read_text(t_sc *sc, const char *s);
-int			ft_ammount(char *str);
+int			ft_amount(char *str);
 int			ft_is_flag(char c);
 void		ft_print_ammount(int n, t_sc *sc);
 void		ft_print_0x(int *f, int str_len, t_sc *sc);
@@ -84,9 +81,7 @@ void		ft_uint_dot(unsigned int nbr, t_sc *sc);
 int			ft_d_size(int nbr, int nbr_len, t_sc *sc);
 char		*ft_d_set(char *number, int nbr, int size, t_sc *sc);
 char		ft_d_max_write(char *number, int nbr, t_sc *sc);
-char		*ft_dot_flags(char *aux, char *number, int *flags, t_sc *sc);
 char		*ft_minus_dot_d(char *aux, char *number, int *flags, t_sc *sc);
-char		*ft_plus_dot_d(char *aux, char *number, int *flags, t_sc *sc);
 char		*ft_dcpy(char *aux, char *number, int j);
 char		*ft_dstr(int nbr, char *number, t_sc *sc);
 int			ft_bigger(int a, int b);
@@ -97,9 +92,6 @@ int			ft_size_delimitation(t_sc *sc, int str_len, int *flags);
 char		*ft_minmax(char *dest, char *str, t_sc *sc);
 char		*ft_string_minus_flag(char *dest, char *str, int *flags, t_sc *sc);
 void		ft_pointer_flags(int *flags, int n, t_sc *sc);
-
-void		ft_print_spaces_before(int min, int max, t_sc *sc);
-
 int			ft_valid_flags_str(int *flags);
 int			ft_valid_flags_nbr(int *flags);
 
@@ -120,6 +112,6 @@ int			ft_flag6(char *str, int *flags, t_sc *sc);
 int			ft_flags56(char *str, int *flags, t_sc *sc);
 char		*ft_dest(char *str, int *flags, t_sc *sc);
 int			ft_same_len(char *str, t_sc *sc);
-int			ft_nf6_nammount(char *str, int *flags, t_sc *sc);
+int			ft_nf6_namount(char *str, int *flags, t_sc *sc);
 
 #endif

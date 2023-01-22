@@ -23,7 +23,7 @@ int	ft_same_len(char *str, t_sc *sc)
 	return (1);
 }
 
-int	ft_nf6_nammount(char *str, int *flags, t_sc *sc)
+int	ft_nf6_namount(char *str, int *flags, t_sc *sc)
 {
 	char	*dest;
 

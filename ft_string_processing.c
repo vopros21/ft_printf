@@ -29,7 +29,7 @@ void	ft_strings(char *str, int *flags, t_sc *sc)
 		return ;
 	if (!ft_flags56(str, flags, sc))
 		return ;
-	if (!ft_nf6_nammount(str, flags, sc))
+	if (!ft_nf6_namount(str, flags, sc))
 		return ;
 	dest = ft_dest(str, flags, sc);
 	free(dest);
@@ -103,7 +103,7 @@ void	ft_check_pre_dot_ammount(const char *s, t_sc *sc)
 		s++;
 		if (*s == '0')
 			exit(EXIT_FAILURE);
-		sc->pre_dot_ammount = ft_ammount((char *)s);
+		sc->pre_dot_ammount = ft_amount((char *)s);
 		while (*s != '.')
 			s++;
 	}
